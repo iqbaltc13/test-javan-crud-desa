@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "126b0f7c-e66b-490d-aeeb-d1b264b29362",
+		"name": "Test Koding Javan 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4206532"
+	},
+	"item": [
+		{
+			"name": "Get All Desa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/desa",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Desa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/desa/{{id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"desa",
+						"{{id}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/desa/7488",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"desa",
+								"7488"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.22.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Dec 2023 03:38:47 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response_code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": 7488,\n        \"code\": \"1205072008\",\n        \"district_code\": \"120507 \",\n        \"name\": \"PANTAI GEMI\",\n        \"meta\": \"{\\\"lat\\\":\\\"3.738519\\\",\\\"long\\\":\\\"98.4129396\\\",\\\"pos\\\":\\\"20812\\\"}\",\n        \"created_at\": \"2023-12-13T01:53:46.000000Z\",\n        \"updated_at\": \"2023-12-13T01:53:46.000000Z\",\n        \"detail_position\": {\n            \"lat\": \"3.738519\",\n            \"long\": \"98.4129396\",\n            \"pos\": \"20812\"\n        },\n        \"district\": {\n            \"id\": 356,\n            \"code\": \"120507 \",\n            \"city_code\": \"1205\",\n            \"name\": \"STABAT\",\n            \"meta\": \"{\\\"lat\\\":\\\"3.750767\\\",\\\"long\\\":\\\"98.4529711\\\"}\",\n            \"created_at\": \"2023-12-13T01:53:45.000000Z\",\n            \"updated_at\": \"2023-12-13T01:53:45.000000Z\",\n            \"detail_position\": {\n                \"lat\": \"3.750767\",\n                \"long\": \"98.4529711\"\n            },\n            \"city\": {\n                \"id\": 28,\n                \"code\": \"1205\",\n                \"province_code\": \"12\",\n                \"name\": \"KABUPATEN LANGKAT\",\n                \"meta\": \"{\\\"lat\\\":\\\"3.8653916\\\",\\\"long\\\":\\\"98.3088441\\\"}\",\n                \"created_at\": \"2023-12-13T01:53:45.000000Z\",\n                \"updated_at\": \"2023-12-13T01:53:45.000000Z\",\n                \"detail_position\": {\n                    \"lat\": \"3.8653916\",\n                    \"long\": \"98.3088441\"\n                },\n                \"province\": {\n                    \"id\": 2,\n                    \"code\": \"12\",\n                    \"name\": \"SUMATERA UTARA\",\n                    \"meta\": \"{\\\"lat\\\":\\\"2.1153547\\\",\\\"long\\\":\\\"99.5450974\\\"}\",\n                    \"created_at\": \"2023-12-13T01:53:45.000000Z\",\n                    \"updated_at\": \"2023-12-13T01:53:45.000000Z\",\n                    \"detail_position\": {\n                        \"lat\": \"2.1153547\",\n                        \"long\": \"99.5450974\"\n                    }\n                }\n            }\n        }\n    }\n}"
+				},
+				{
+					"name": "NULL Data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/desa/{{id}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"desa",
+								"{{id}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.22.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Dec 2023 05:39:43 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response_code\": 200,\n    \"message\": \"Success\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Desa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "district_code",
+							"value": "120603",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Suka Kamu",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "3.175266",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "98.5199388",
+							"type": "text"
+						},
+						{
+							"key": "pos",
+							"value": "22152",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/desa",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"desa"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sukses",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "district_code",
+									"value": "120603",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Suka Kamu",
+									"type": "text"
+								},
+								{
+									"key": "lat",
+									"value": "3.175266",
+									"type": "text"
+								},
+								{
+									"key": "long",
+									"value": "98.5199388",
+									"type": "text"
+								},
+								{
+									"key": "pos",
+									"value": "22152",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/desa",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"desa"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.22.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Dec 2023 04:11:04 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response_code\": 200,\n    \"message\": \"Success\",\n    \"data\": {\n        \"name\": \"Suka Kamu\",\n        \"district_code\": \"120603\",\n        \"code\": \"1206032021\",\n        \"meta\": \"{\\\"lat\\\":\\\"3.175266\\\",\\\"long\\\":\\\"98.5199388\\\",\\\"pos\\\":\\\"22152\\\"}\",\n        \"updated_at\": \"2023-12-13T04:11:04.000000Z\",\n        \"created_at\": \"2023-12-13T04:11:04.000000Z\",\n        \"id\": 83811,\n        \"detail_position\": {\n            \"lat\": \"3.175266\",\n            \"long\": \"98.5199388\",\n            \"pos\": \"22152\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Desa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/desa/{{id}}?_method=DELETE",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"desa",
+						"{{id}}"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "DELETE"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/desa/{{id}}?_method=DELETE",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"desa",
+								"{{id}}"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "DELETE"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.22.1"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.13"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 13 Dec 2023 05:39:32 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"response_code\": 200,\n    \"message\": \"Success Delete Desa Suka Kamu Aja\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Desa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Suka Kamu Aja",
+							"type": "text"
+						},
+						{
+							"key": "lat",
+							"value": "3.175277",
+							"type": "text"
+						},
+						{
+							"key": "long",
+							"value": "98.5199377",
+							"type": "text"
+						},
+						{
+							"key": "pos",
+							"value": "22153",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/desa/{{id}}?_method=PUT",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"desa",
+						"{{id}}"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "PUT"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
